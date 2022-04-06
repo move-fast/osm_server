@@ -85,3 +85,6 @@ tar -czvf $DB_TAR_FILE db
 
 # - Transfer new db Tar file to s3
 aws s3 cp ${DB_TAR_FILE} s3://files.as.osm
+
+# - Once done shutdown the server
+sudo shutdown now
